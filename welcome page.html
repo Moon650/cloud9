@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./drive css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./drive css/welcome page.css">
+    <link rel="stylesheet" type="text/css" href="./drive css/font-awesome.min.css">
+    <title>welcom</title>
+</head>
+<body>
+    
+      <!-- <h1>Welcome <span id="uname"></span>, Your registration with this <span id="mail"></span> was successful</h1> -->
+
+      <!-- <h2>You can now login</h2>
+      <p>Click on the link to login <a href="login.html">login</a></p> -->
+      <div class="banner">
+        <div class="banner1">
+            <div class="banner1a">
+
+            </div>          
+        </div>
+        <div class="banner2">
+            <div class="banner2a">
+              <div class="good">
+                <i class="fa fa-check"></i>
+              </div><br>
+              <div class="good2"></div>
+            </div><br>
+            <h2>Welcome <span id="uname"></span>,<br> Your registration with this <span id="mail"></span> was successful</h2><br>
+        </div>
+    </div>
+    <div class="second">
+        <div class="second1">
+            <div class="connet">
+               <h3>Connect With Us</h3>
+            </div><br><br>
+            <div class="sub">
+               <div class="sub1">
+                  <i class="fa fa-facebook"></i>
+               </div>
+               <div class="sub1">
+                  <i class="fa fa-twitter"></i>
+               </div>
+               <div class="sub1">
+                  <i class="fa fa-phone"></i>
+               </div>
+                <div class="sub1">
+                    <i class="fa fa-pinterest"></i>
+                </div>
+                <div class="sub1">
+                    <i class="fa fa-instagram"></i>
+                </div>
+           </div>
+        </div>
+        <div class="second2">
+            <div class="connet">
+                <h3>Click to login</h3>
+             </div><br><br>
+             <div class="sub">
+                 <a href="./login.html"><button>login</button></a>
+                 </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+window.addEventListener('load', () => {
+            let uname = localStorage.getItem('USERNAME');
+            // let fname = localStorage.getItem('FIRSTNAME');
+            // let lname = localStorage.getItem('LASTNAME');
+            let mail = localStorage.getItem('MAIL');
+            // let phone = localStorage.getItem('PHONE');
+
+
+            document.getElementById('uname').innerHTML = uname;
+            document.getElementById('mail').innerHTML = mail;
+           
+            // document.getElementById('fname').innerHTML = fname;
+            // document.getElementById('lname').innerHTML = lname;
+            // document.getElementById('mail').innerHTML = mail;
+            // document.getElementById('phone').innerHTML = phone;
+
+         })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.hello{
+    width: 100%;
+    height: auto;
+    /* background-color:red; */
+}
+
+.hello .navbar{
+    width: 100%;
+    height: 13vh;
+   background-color: black;
+   position: fixed;
+   z-index:10;
+}
+
+.hello .navbar .nav1{
+    width: 20%;
+    height: 11vh;
+    background-image: url(./logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hello .navbar .nav2{
+   height: 11vh;
+   width: 50%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   align-items: center;
+   padding: 15px;
+
+}
+.hello .navbar .nav2 .nav3{
+  height: 6vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+}
+.hello .navbar .nav2 .nav3 a:hover{
+    color: black;
+
+}
+/* navbar2 */
+.hello .navbar2{
+  width:100%;
+  height: 11vh;
+  display: none;
+  background-color: black;
+ 
+}
+.hello .navbar2 .nav1{
+    background-image: url(./logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 9vh;
+    width: 50%;
+    margin: auto;
+}
+.hello .navbar3{
+    display: none;
+    height: 6vh;
+    width: 100%;
+    background-color: black;
+   
+}
+.hello .navbar3 .nav2{
+    height: 4vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.hello .navbar3 .nav2 .nav3 {
+  height: 4vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar3 .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar3 .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+}
+.hello .navbar3 .nav2 .nav3 a:hover{
+    color: black;
+
+}
+/* end of navbar */
+body .page{
+    font-family: sans-serif;
+}
+.bg{
+    width: 100%;
+    height: 40vh;
+    background-image:  url(../img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right ;
+    padding-top: 15vh;
+    position: relative;
+}
+
+.bg::before{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 40vh;
+    z-index: 1;
+}
+.bg2{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.bg2 h1{
+    font-weight: bold;
+}
+/* .bg::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 40vh;
+
+} */
+.ul-list{
+    width: 20%;
+    margin: 0% 39%;
+    margin-top: 3%;
+   
+}
+.ul-list ul{
+    display: flex;
+    justify-content: space-between;
+}
+.ul-list ul li{
+    list-style-type: none;
+    border-left: 4px solid #EEB91A;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.about-page{
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-left{
+    width: 25%;
+    height: 70vh;
+    background-color:#EEB91A;
+    display:flex;
+    align-items: center;
+
+}
+.about-left .about-left-image{
+    width: 25%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+.about-left .about-left-image img{
+    width: 500px;
+    height: 50vh;
+}
+.about-right{
+    width: 40%;
+    height: 50vh;
+    
+    
+    /* padding-right: 8%; */
+    /* margin-left: 30px; */
+
+}
+.about-right h5{
+    color: #EEB91A;
+    padding-bottom: px;
+}
+.about-right h2{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: cursive;
+}
+
+.about-right p{
+    font-size:16px;
+    color: rgb(77, 73, 73); 
+    line-height: 2em;
+    text-align: justify;
+}
+.counter{
+    width: 100%;
+    height: 30vh;
+    background-image:  url(../img/banner2.jpg);
+    margin-bottom: 5%;
+   position: relative;
+}
+.counterbg{
+    width: 70%;
+    height: 30vh;
+    margin: 0% 15%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.counter::before{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 30vh;
+    z-index: 1;
+}
+.row1{
+    display: flex;
+}
+.row1 i{
+    font-size: 30px;
+    color: #EEB91A;
+}
+.row1 div{
+    padding-left: 5px;
+}
+
+/* last */
+ .last{
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+    
+}
+.last .last-1 h3{
+    color: orange;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.last .lone{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    
+}
+.last .lone .last-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+}
+.last .last-3 p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.last .last-3 span{
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.last .last-3 .sub i{
+    color:#EEB91A;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.last .move .move-1{
+    display: flex;
+    justify-content: center;
+}
+.last .move .move-1 u{
+   color: white;
+}
+.last .move .move-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.last .move .move-2 i{
+    color:grey;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1025px) {
+    .hello .navbar{
+        display:none; 
+    }
+   .hello .navbar2{
+        display:block;  
+
+    }
+   .hello .navbar3{
+        display: block;
+    }
+    .bg{
+        width: 100%;
+       
+    }
+    .ul-list{
+        width: 70%;   
+        margin: 0% 15%;
+    }
+    .about-page{
+        display: block;
+        padding-top: 40px;
+        height: auto;
+    }
+    .about-left{
+       display: none;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .counter{
+        height: 60vh;
+        margin-top: 20px;
+        margin-bottom: 0%;
+        padding-top: 35px;
+    }
+    .counterbg{
+        display: block;
+        height: 60vh;
+    }
+    .counter::before{
+        height: 60vh;
+    }
+    .row1{
+        padding: 20px;
+        width: 100%;
+        margin-top: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        
+    }
+    .row1:first-child{
+        margin-top: 0%;
+    }
+    .row1 i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .bg{
+        width: 100%;
+       
+    }
+    .ul-list{
+        width: 70%;   
+        margin: 0% 15%;
+    }
+    .about-page{
+        display: block;
+        padding-top: 40px;
+        height: auto;
+    }
+    .about-left{
+       display: none;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .counter{
+        height: 80vh;
+        margin-top: 20px;
+        margin-bottom: 0%;
+        padding-top: 35px;
+    }
+    .counterbg{
+        display: block;
+        height: 80vh;
+    }
+    .counter::before{
+        height: 80vh;
+    }
+    .row1{
+        padding: 20px;
+        width: 100%;
+        margin-top: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        
+    }
+    .row1:first-child{
+        margin-top: 0%;
+    }
+    .row1 i{
+        font-size: 40px;
+    }
+    
+     .last{
+        height: auto;
+    }
+     .last .lone{
+        grid-template-columns: 1fr;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+}

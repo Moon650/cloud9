@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.hello{
+    width: 100%;
+    height: auto;
+    background-color:red;
+}
+
+.hello .navbar{
+    width: 100%;
+    height: 13vh;
+   background-color:white;
+   position: fixed;
+}
+.hello .navbar .nav1{
+    width: 20%;
+    height: 11vh;
+    background-image: url(./pictures/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hello .navbar .nav2{
+   height: 11vh;
+   width: 50%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   align-items: center;
+   padding: 15px;
+
+}
+.hello .navbar .nav2 .nav3{
+  height: 6vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:black;
+    padding-top: 7px;
+}
+.hello .navbar .nav2 .nav3 a:hover{
+    color: black;
+
+}
+/* navbar2 */
+.hello .navbar2{
+  width:100%;
+  height: 11vh;
+  display: none;
+  background-color:white;
+ 
+}
+.hello .navbar2 .nav1{
+    background-image: url(./pictures/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 9vh;
+    width: 50%;
+    margin: auto;
+}
+.hello .navbar3{
+    display: none;
+    height: 6vh;
+    width: 100%;
+    background-color:white;
+   
+}
+.hello .navbar3 .nav2{
+    height: 4vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.hello .navbar3 .nav2 .nav3 {
+  height: 4vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar3 .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar3 .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:black;
+    padding-top: 7px;
+}
+.hello .navbar3 .nav2 .nav3 a:hover{
+    color: black;
+
+}
+.banner{
+    height:90vh;
+    width: 100%;
+    background-image: linear-gradient(360deg,rgba(0,0,0,0.6),rgba(0,0,0, 0.6)),url(./pictures/taximan.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner .banner1{
+    width: 55%;
+    height: 45vh;
+    /* background-color: aqua; */
+    margin-top: 80px;
+    text-align: center;
+    
+}
+.banner .banner1 h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.banner .banner1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .banner .banner1 .signup .try{
+    background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgb(0,0,0,0.5));
+    border: none;
+  }
+  .banner .banner1 .signup .try:hover{
+    padding: 7px;
+    background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgba(243, 241, 241, 0.5));
+    font-weight: bold;
+  }
+  .banner .banner1 .login .all{
+    background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgb(0,0,0,0.5));
+    border: none;
+  }
+  .banner .banner1 .login .all:hover{
+    padding: 7px;
+    background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgba(243, 241, 241, 0.5));
+    font-weight: bold;
+  }
+
+/* form */
+.banner .banner1 .signup .modal .modal-dialog .modal-content .modal-body .second3a p{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight:15px !important;
+    color:#EEB91A;
+    font-weight: bold;
+}
+.banner .banner1 .signup .modal .modal-dialog .modal-content .modal-body .second3a .bell{
+    width: 100%;
+    height:5vh;
+    border-radius: 10px;
+    border:3px solid;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    border:none;
+    border-color: red;
+    text-align: center;
+    padding-top: 10px;
+    display:block;
+  }
+.banner .banner1 .signup .modal .modal-dialog .modal-content .modal-body form .hell {
+    display: flex;
+    justify-content: space-around;
+}
+.banner .banner1 .signup .modal .modal-dialog .modal-content .modal-body form .hell .name{
+    width: 60%;
+    height: 10vh;
+}
+.banner .banner1 .signup .modal .modal-dialog .modal-content .modal-body form .hell .name input{
+    width:90%;
+    height: 8vh;
+    border: none;
+    padding: 9px;
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: #EEB91A;
+  }
+  .banner .banner1 .signup .modal .modal-dialog .modal-content .modal-body   form  button{
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #EEB91A;
+    color: white;
+
+  }
+  .banner .banner1 .signup .modal .modal-dialog .modal-content .modal-body form  button:hover{
+    padding: 13px;
+
+  }
+  .banner .banner1 .login .modal .modal-dialog .modal-content .modal-header{
+    color:black;
+    font-weight: bold;
+  }
+  .banner .banner1 .login .modal .modal-dialog .modal-content .modal-body .second3a p{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight:15px !important;
+    color:#EEB91A;
+    font-weight: bold;
+  }
+  .banner .banner1 .login .modal .modal-dialog .modal-content .modal-body .second3a .bell{
+    width: 100%;
+    height:5vh;
+    border-radius: 10px;
+    border:3px solid;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    border:none;
+    border-color: red;
+    text-align: center;
+    padding-top: 10px;
+    display:block;
+    /* transition: 10s ease-in-out; */
+   
+  }
+  .banner .banner1 .login .modal .modal-dialog .modal-content .modal-body .reg .hell .name input{
+    width:60%;
+    height: 8vh;
+    border: none;
+    padding: 9px;
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: #EEB91A; 
+
+  }
+  .banner .banner1 .login .modal .modal-dialog .modal-content .modal-body .reg  button{
+    padding: 8px;
+    border: none;
+    /* border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    background-color: #EEB91A;
+    color: white;
+    border-radius:20px ;
+  }
+  .banner .banner1 .login .modal .modal-dialog .modal-content .modal-body .reg  button:hover{
+    color:black;
+    background-color: white;
+    border-color: #EEB91A;
+    border:3px solid #EEB91A ;
+  }
+  .client .client2{
+    height: 20vh;
+    width: 100%;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.client .client2 .andleft{
+    width: 50%;
+    height: 20vh;
+    padding: 35px;
+}
+.client .client2 .andleft h4{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.client .client2 .andleft h3{
+    color:#EEB91A;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.client .client2 .andright{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.client .client2 .andright .right1{
+    width: 20%;
+    height: 9vh;
+    background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.client .client2 .andright .right2{
+    width: 20%;
+    height: 9vh;
+    background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(1\).jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.client .client2 .andright .right3{
+    width: 20%;
+    height: 9vh;
+    background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(2\).jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* last */
+ .last{
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+    
+}
+.last .last-1 h3{
+    color: orange;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.last .lone{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    
+}
+.last .lone .last-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+}
+.last .last-3 p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.last .last-3 span{
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.last .last-3 .sub i{
+    color:#EEB91A;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.last .move .move-1{
+    display: flex;
+    justify-content: center;
+}
+.last .move .move-1 u{
+   color: white;
+}
+.last .move .move-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.last .move .move-2 i{
+    color:grey;
+    font-size: 13px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1025px) {
+    .hello .navbar{
+        display:none;  
+    }
+   .hello .navbar2{
+        display:block;  
+    }
+   .hello .navbar3{
+        display: block;
+    }
+    .client .client2 .andright .right1{
+        width: 20%;
+        height: 5vh;
+        background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(2\).jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .client .client2 .andright .right2{
+        width: 20%;
+        height: 7vh;
+        background-image: url(./pictures/card.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .client .client2 .andright .right3{
+        width: 20%;
+        height: 5vh;
+        background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(1\).jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}   
+
+@media screen and (max-width:768px) {
+    .hello .navbar{
+        display:none;  
+}
+   .hello .navbar2{
+        display:block;  
+}
+   .hello  .navbar3{
+        display: block;
+     }
+}  
+
+
+@media screen and (max-width:480px) {
+    .hello  .navbar{
+        display:none;  
+}
+   .hello .navbar2{
+         display:block;  
+}
+    .hello .navbar3{
+        display: block;
+    }
+     .last{
+        height: auto;
+    }
+    .last .lone{
+        grid-template-columns: 1fr;
+    }
+}    

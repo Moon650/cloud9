@@ -1,0 +1,2026 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color:white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.nav .nav1{
+    width: 25%;
+    height: 10vh;
+    /* background: linear-gradient(360deg, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)); */
+    background-color: #EEB91A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .nav1 .nav1a{
+    width:80%;
+    height: 10vh;
+   background-image: url(./pictures/logo.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.nav .nav1 .nav1b{
+    background-color:white;
+    height: 10vh;
+    width:20% ;
+    text-align: center;
+    padding: 20px;
+}
+.nav .nav1 .nav1b a i{
+    font-size: larger;
+    font-size: 30px;
+    color:#EEB91A;
+   }
+   .nav .nav1 .nav1b a i:hover{
+    color: black;
+   }
+.nav .nav2{
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .nav2 .nav2a{
+    width: 18%;
+    height: 6vh;
+    background-color:#EEB91A;;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.nav .nav2 .nav2a:hover{
+   background-color: black;
+}
+.nav .nav2 .nav2a i{
+ font-size: larger;
+ color:white;
+}
+.nav .nav2 .nav2a i span{
+    font-size:15px;
+    font-weight: bold;
+    color:white
+}
+.nav .nav2 .nav2b{
+    width: 1%;
+    height: 10vh;
+    background-color: black;
+}
+.nav .nav2 .nav2c{
+    width: 75%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.nav .nav2 .nav2c .nav2c1{
+    height: 7vh;
+    width: 15%;
+    border-radius: 180%;
+    background-color:#F6F2f3;
+    text-align: center;
+    padding-top: 8px;
+}
+.nav .nav2 .nav2c .nav2c1 i{
+    color: grey;
+}
+.nav .nav2 .nav2c .nav2c2{
+    height: 8vh;
+    width: 80%;
+    background-color:#F6F2f3;
+    color: grey;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 7px;
+}
+/* end */
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-color: brown;
+    display: flex;
+    
+}
+.banner .banner1{
+    width: 20%;
+    height: 90vh;
+    background-color: black;
+    margin-top:10vh;
+    position: fixed;
+    
+}
+.banner .banner1 .sub{
+    width: 100%;
+    height: 10vh;
+    background-color:black;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.banner .banner1 .sub i{
+    color: white;
+    font-size: 15px;
+}
+.banner .banner1 .sub span{
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.banner .banner1 .sub:hover{
+    background-color: #EEB91A;
+}
+.banner .banner1 .sub:hover span, 
+.banner .banner1 .sub:hover i{
+    color:white;
+}
+.banner .banner2{
+    width: 80%;
+    height:170vh;
+    background-color:#F6F2f3;
+    margin-top:10vh;
+    margin-left: 20%;
+    padding: 20px;
+    
+}
+.banner .banner2 .active{
+    width: 100%;
+    height:25vh ;
+    background-color: white;
+
+}
+.banner .banner2 .active .active1{
+    height: 5vh;
+    width: 100%;
+    background-color:white;
+    padding: 5px;
+    padding-left: 15px;
+}
+.banner .banner2 .active .active1 h4{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+}
+.banner .banner2 .active .active2{
+    height:20vh;
+    width: 100%;
+    background-color:white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner .banner2 .active .active2 .active2a{
+    height:15vh;
+    width:20%;
+    background-color:blueviolet;
+    /* padding: 5px; */
+    
+}
+.banner .banner2 .active .active2 .active2a .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.banner .banner2 .active .active2 .active2a .word p{
+   color: white;
+}
+.banner .banner2 .active .active2 .active2a .num{
+    height:7vh;
+    width:100%;
+   
+}
+.banner .banner2 .active .active2 .active2a .num i{
+    color: darkmagenta;
+}
+.banner .banner2 .active .active2 .active2a .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+/* pending */
+
+.banner .banner2 .active .active2 .active2b{
+    height:15vh;
+    width:20%;
+    background-color:orange;
+    /* padding: 10px; */
+    
+}
+.banner .banner2 .active .active2 .active2b .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.banner .banner2 .active .active2 .active2b .word p{
+   color: white;
+}
+.banner .banner2 .active .active2 .active2b .num{
+    height:7vh;
+    width:100%;
+   
+}
+.banner .banner2 .active .active2 .active2b .num i{
+    color:orangered;
+}
+.banner .banner2 .active .active2 .active2b .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+.banner .banner2 .bar{
+    width: 50%;
+    height: 52vh;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+}
+.banner .banner2 .bar .bar1{
+    width: 100%;
+    height: 7vh;
+    /* background-color:antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+  
+}
+.banner .banner2 .bar .bar1 .num1{
+    width: 30%;
+    height: 7vh;
+    /* background-color:chartreuse; */
+    padding: 10px;
+  
+}
+.banner .banner2 .bar .bar1 .num1 p{
+    font-weight: bold;
+}
+.banner .banner2 .bar .bar1 .num2{
+    width: 30%;
+    height: 7vh;
+    /* background-color:chartreuse; */
+    text-align: center;
+    padding: 10px;
+  
+}
+.banner .banner2 .bar .bar1 .num2 p{
+    font-weight: bold;
+}
+.banner .banner2 .bar .bar2{
+    width: 100%;
+    height: 43vh;
+    margin: auto;
+    background-image:url(./pictures/barchat.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .banner2 .hell{
+    height: 65vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 370px;
+    padding: 20px;
+}
+.banner .banner2 .hell h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+.banner .banner2 .hell i{
+  color: #EEB91A;
+}
+.banner .banner2 .hell p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* banner2 end */
+
+.banner .banner2 .active .active2 .active2c{
+    height:15vh;
+    width:20%;
+    background-color:green;
+    /* padding: 10px; */
+    
+}
+.banner .banner2 .active .active2 .active2c .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.banner .banner2 .active .active2 .active2c .word p{
+   color: white;
+}
+.banner .banner2 .active .active2 .active2c .num{
+    height:7vh;
+    width:100%;
+   
+}
+.banner .banner2 .active .active2 .active2c .num i{
+    color: darkgreen;
+}
+.banner .banner2 .active .active2 .active2c .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+/* rental */
+
+.banner .banner2 .active .active2 .active2d{
+    height:15vh;
+    width:20%;
+    background-color:red;
+    /* padding: 10px; */
+    
+}
+.banner .banner2 .active .active2 .active2d .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.banner .banner2 .active .active2 .active2d .word p{
+   color: white;
+}
+.banner .banner2 .active .active2 .active2d .num{
+    height:7vh;
+    width:100%;
+   
+}
+.banner .banner2 .active .active2 .active2d .num i{
+    color:darkred;
+}
+.banner .banner2 .active .active2 .active2d .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner .banner3{
+    width: 80%;
+    height:180vh;
+    background-color:#F6F2f3;
+    margin-top:10vh;
+    margin-left: 20%;
+    padding: 10px;
+    display: none;
+}
+.banner .banner3 .details{
+    height: 10vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 10px;
+    padding-top: 20px;
+
+}
+.banner .banner3 .details i span{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.banner .banner3 .available{
+  width: 100%;
+  height: 35vh;
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.banner .banner3 .available .ava1{
+    width: 70%;
+    height: 30vh;
+    /* background-color:aqua; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner .banner3 .available .ava1 .ava1a{
+    width: 25%;
+    height: 30vh;
+    /* background-color:blue; */
+    padding: 15px;
+  }
+  .banner .banner3 .available .ava1 .ava1a .ava11{
+    width: 100%;
+    height: 25vh;
+    background-image: url(./pictures/taximan.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  }
+  .banner .banner3 .available .ava1 .ava1b{
+    width:75%;
+    height: 30vh;
+    /* background-color:deeppink; */
+    padding: 15px;
+  }
+  .banner .banner3 .available .ava1 .ava1b .empty1{
+    width:70% ;
+    height:7vh;
+    background-color: #EEB91A;
+    display: flex;
+    justify-content: space-between;
+ }
+ .banner .banner3 .available .ava1 .ava1b .empty1 .empty2{
+    width:50% ;
+    height:7vh;
+    background-color:white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+ }
+ 
+ .banner .banner3 .available .ava1 .ava1b .empty{
+    width:70% ;
+    height:4vh;
+    background-color:#F6F2f3;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+ }
+  .banner .banner3 .available .ava1 .ava1b h3{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 25px;
+     font-weight: bold;
+  }
+  .banner .banner3 .available .ava1 .ava1b .aa{
+    color: grey;
+  }
+  .banner .banner3 .available .ava1 .ava1b i{
+    color: orange;
+  }
+  .banner .banner3 .available .ava1 .ava1b p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
+  .banner .banner3 .available .ava1 .ava1b p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color:black;
+  }
+
+  .banner .banner3 .available .ava2{
+    width: 30%;
+    height: 30vh;
+    /* background-color:cornflowerblue; */
+
+  }
+  .banner .banner3 .available .ava2 .ava2a{
+    width: 100%;
+    height: 20vh;
+    /* background-color:antiquewhite; */
+    text-align:right;
+    padding: 10px;
+
+  }
+  .banner .banner3 .available .ava2 .ava2a i{
+    color:green;
+
+  }
+  .banner .banner3 .available .ava2 .ava2a i span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .banner .banner3 .available .ava2 .ava2b{
+    width: 100%;
+    height: 10vh;
+    /* background-color:brown; */
+    text-align:right;
+    padding: 10px;
+    padding-top: 35px;
+
+  }
+  .banner .banner3 .available .ava2 .ava2b .aa{
+    color:red;
+  }
+  .banner .banner3 .available .ava2 .ava2b i {
+    color:grey;
+  }
+
+.banner .banner3 .capacity{
+    width: 100%;
+    height: 70vh;
+    background-color:white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .banner .banner3 .capacity .capacity1{
+    width: 50%;
+    height: 67vh;
+    /* background-color:burlywood; */
+    padding: 20px;
+  }
+  .banner .banner3 .capacity .capacity1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+  }
+  .banner .banner3 .capacity .capacity1 p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+    margin-left:100px;
+  }
+  .banner .banner3 .capacity .capacity2{
+    width: 50%;
+    height: 67vh;
+    /* background-color: cadetblue; */
+    padding: 20px;
+  }
+  .banner .banner3 .capacity .capacity2 p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+    margin-left:100px;
+  }
+  .banner .banner3 .capacity .capacity2 p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+    margin-left:100px;
+  }
+  .banner .banner3 .capacity .capacity2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+  }
+  .banner .banner3 .capacity .capacity2 p span i{
+    color: orange;
+  }
+  .banner .banner3 .capacity .capacity2 p span .aa{
+    color: grey;
+  }
+  .banner .banner3 .document{
+    width: 100%;
+    height: 10vh;
+    /* background-color: bisque; */
+    padding: 10px;
+    padding-top: 30px;
+  }
+  .banner .banner3 .document p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+  }
+  .banner .banner3 .license{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .banner .banner3 .license .license1{
+    width:50%;
+    height: 30vh;
+    /* background-color:bisque; */
+    padding: 15px;
+  }
+  .banner .banner3 .license .license1 .license1a{
+    width:50%;
+    height: 7vh;
+    /* background-color:violet; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+  }
+  .banner .banner3 .license .license1 .license1a .cen1{
+    width:20%;
+    height: 7vh;
+    background-color:#EEB91A;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    
+  }
+  .banner .banner3 .license .license1 .license1a .cen1 i{
+    color: white;
+  }
+  
+  .banner .banner3 .license .license1 .license1a .cen2{
+    width:80%;
+    height: 7vh;
+    background-color:#F6F2f3;
+    
+  }
+
+
+  .banner .banner3 .license .license2{
+    width: 50%;
+    height: 30vh;
+    /* background-color:cadetblue; */
+    padding: 15px;
+  }
+  .banner .banner3 .license .license1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+  }
+  .banner .banner3 .license .license1 p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+  }
+  .banner .banner3 .license h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+  }
+  /* banner3 end */
+
+.banner .banner4{
+    width: 80%;
+    height:120vh;
+    background-color:#F6F2f3;
+    margin-top:10vh;
+    margin-left: 20%;
+    padding: 20px;
+    display: none; 
+}
+.banner .banner4 .pass{
+    width:100%;
+    height:7vh;
+    /* background-color:blue; */
+    padding: 10px;
+    padding-left: 20px;
+    
+}
+.banner .banner4 .pass h3{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #EEB91A;
+    
+}
+
+.banner .banner4 .total{
+    width: 100%;
+    height: 13vh;
+    /* background-color:cadetblue; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:4px solid white;
+    border-top:4px solid white;
+   
+}
+.banner .banner4 .total .total1{
+    width:60%;
+    height: 10vh;
+    /* background-color:rgb(191, 208, 209); */
+    display: flex;
+    justify-content: space-between;
+   
+}
+.banner .banner4 .total .total1 .total1a{
+    width:30%;
+    height: 10vh;
+   /* background-color: blueviolet; */
+   padding-top: 20px;
+   
+}
+.banner .banner4 .total .total1 .total1a p{
+   font-family: Arial, Helvetica, sans-serif;
+   color: grey;
+   
+}
+.banner .banner4 .total .total1 .total1a p span{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    
+ }
+.banner .banner4 .total .total2{
+    width: 40%;
+    height: 10vh;
+    /* background-color:bisque; */
+    display: flex;
+    justify-content: space-between;
+   
+}
+.banner .banner4 .total .total2 .total2a{
+    width: 50%;
+    height: 10vh;
+    /* background-color:bisque; */
+   
+}
+.banner .banner4 .total .total2 .total2b{
+    width: 50%;
+    height: 10vh;
+    /* background-color:aquamarine; */
+    text-align: right;
+    padding-top: 20px;
+   
+}
+.banner .banner4 .total .total2 .total2b i{
+   color:#EEB91A;
+   font-size: 25px;
+    
+}
+.banner .banner4 .total .total2 .total2b i:hover{
+    color:red;
+    font-size: 20px;
+     
+ }
+.banner .banner4 .active{
+    width: 100%;
+    height: 10vh;
+    /* background-color: aqua; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner .banner4 .active .activen{
+    width: 7%;
+    height: 7vh;
+    /* background-color:chocolate; */
+    padding: 15px;
+}
+.banner .banner4 .active .active1{
+    width: 15%;
+    height: 7vh;
+    /* background-color:chocolate; */
+    padding: 15px;
+}
+.banner .banner4 .active .active1 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.banner .banner4 .active .active1 .aa{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.banner .banner4 .rental{
+    width: 100%;
+    height: 11vh;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 11px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner .banner4 .rental:hover{
+    background-color: #F6F2f3;
+}
+.banner .banner4 .rental .rentala{
+    width: 5%;
+    height: 8vh;
+    background-image: url(./pictures/taximan.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 180%;
+}
+.banner .banner4 .rental .rentalb{
+    width: 15%;
+    height: 8vh;
+    /* background-color: #EEB91A; */
+    text-align: center;
+}
+.banner .banner4 .rental .rentalb p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.banner .banner4 .rental .rentalb p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+}
+.banner .banner4 .rental .rentalc{
+    width: 15%;
+    height: 8vh;
+    /* background-color: #EEB91A; */
+    text-align: center;
+    padding-top: 10px;
+}
+.banner .banner4 .rental .rentalc p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.banner .banner4 .rental .rentald{
+    width: 15%;
+    height: 8vh;
+    /* background-color:green; */
+    text-align: center;
+    padding-top: 10px;
+}
+.banner .banner4 .rental .rentald i{
+   color: #EEB91A;
+}
+.banner .banner4 .rental .rentald .aa{
+    color:grey;
+ }
+ .banner .banner4 .rental .rentale{
+    width: 15%;
+    height: 8vh;
+    /* background-color: #EEB91A; */
+    text-align: center;
+    padding-top: 10px;
+}
+.banner .banner4 .rental .rentale p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.banner .banner4 .rental .rentalf{
+    width: 20%;
+    height: 8vh;
+    /* background-color: #EEB91A; */
+    text-align: center;
+    padding-top: 10px;
+}
+.banner .banner4 .rental .rentalf p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.banner .banner4 .rental .rentalg{
+    width: 10%;
+    height: 8vh;
+    /* background-color: #EEB91A; */
+    text-align: center;
+    padding-top: 10px;
+}
+.banner .banner4 .rental .rentalg i{
+   color:rgb(6, 183, 6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .banner .banner5{
+    width: 80%;
+    height:90vh;
+    background-color:#F6F2f3;
+    margin-top:10vh;
+    margin-left: 20%;
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+/* second division */
+.phonenav{
+    display:none;
+    width: 100%;
+    height: 20vh;
+    background-color:white;
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+.phonenav .phonenav1{
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    background-image: url(./pictures/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.phonenav .phonenav2{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.phonenav .phonenav2 .phonenav2a{
+    width: 20%;
+    height: 10vh;
+    background-color:white;
+    padding: 15px;
+  
+}
+.phonenav .phonenav2 .phonenav2a button{
+   padding: 20px;
+   border: none;
+   border-radius: 10px;
+   background-color: #EEB91A;
+  
+}
+.phonenav .phonenav2 .phonenav2a button i,
+.phonenav .phonenav2 .phonenav2a button:hover{
+   background-color: black;
+   color: #EEB91A;
+   
+ }
+.phonenav .phonenav2 .phonenav2a button i{
+   font-size:30px;
+   
+ }
+.phonenav .phonenav2 .phonenav2b{
+    width: 50%;
+    height: 10vh;
+    background-color:white; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.phonenav .phonenav2 .phonenav2b .phonenav2bi{
+    width: 21%;
+    height: 7vh;
+    background-color:#F6F2f3;
+    border-radius: 180%; 
+    text-align: center;
+    padding-top: 23px;
+   
+}
+.phonenav .phonenav2 .phonenav2b .phonenav2bi i{
+    font-size: 30px;
+    color:black;
+}
+.phonenav .phonenav2 .phonenav2b .phonenav2bii{
+    width: 68%;
+    height: 7vh;
+    background-color:#F6F2f3;
+    font-size:30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.leftside{
+    width:110px;
+    height: 32vh;
+    background-color:black;
+    position:fixed;
+    z-index: 10;
+    top: 350px;
+    animation:5s fadeInUp;
+    display: none;
+}
+.leftside .banner1{
+    width:110px;
+    height: 30vh;
+    background-color:black;
+}
+.leftside .banner1 .sub{
+    width:110px;
+    height: 7vh;
+    background-color:black;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding: 20px;  
+}
+.leftside .banner1 .sub:hover{
+   background-color: #EEB91A;   
+}
+
+.leftside .banner1 .sub i{
+    color: white;
+    font-size: 20px;
+}
+.leftside .banner1 .sub span{
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.sbanner {
+   width: 100%;
+   height: auto;
+   /* background-color: aqua; */
+   display: none;
+   position:relative;
+   z-index: 2;
+}
+
+.sbanner .sbanner1{
+    width: 100%;
+    height:100vh;
+    background-color:#F6F2f3;
+    display:block;
+}
+.sbanner .sbanner2{
+    width: 100%;
+    height: 130vh;
+    background-color:#F6F2f3;
+    display:none;
+}
+.sbanner .sbanner3{
+    width: 100%;
+    height: 100vh;
+    background-color:#F6F2f3;
+    display:none;
+}
+.sbanner .sbanner4{
+    width: 100%;
+    height:100vh;
+    background-color:tomato;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1025px){
+    .nav{
+        display:none;
+    }
+   
+    
+    .banner{
+        display: none;
+    }
+
+    .phonenav{
+        display: block;
+    }
+    .leftside{
+        width:110px;
+        height: 32vh;
+        background-color: bisque;
+        position:fixed;
+        z-index: 10;
+        top: 350px;
+        transition: 1.5s ease-in-out;
+        display: none;
+    }
+    .sbanner{
+        display: block;
+    }
+    .sbanner {
+        position: relative;
+        z-index: 2;
+        top: 20vh;
+        width: 100%;
+        height:auto;
+    }
+    .sbanner .sbanner1{
+        width: 100%;
+        height:140vh;
+        background-color:#F6F2f3;
+        display:block;
+    }
+    .sbanner .sbanner1 .active{
+        width: 100%;
+        height:25vh ;
+        background-color: white;
+        margin-left: auto;
+    
+    }
+    .sbanner .sbanner1 .active .active1{
+        height: 5vh;
+        width: 100%;
+        background-color:white;
+        padding: 5px;
+        padding-left: 15px;
+    }
+    .sbanner .sbanner1 .active .active1 h4{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 20px;
+       font-weight: bold;
+    }
+    .sbanner .sbanner1 .active .active2{
+        height:40vh;
+        width: 100%;
+        background-color:white;
+        padding: 40px;
+        /* display: flex;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        animation:3s fadeIn;
+    }
+    .sbanner .sbanner1 .active .active2 .active2a{
+        height:15vh;
+        /* width:50%; */
+        background-color:blueviolet;
+        padding: 10px;
+        
+    }
+    .sbanner .sbanner1 .active .active2 .active2a .word{
+        height:7vh;
+        width:100%;
+        padding: 5px;
+        text-align:right;
+    }
+    .sbanner .sbanner1 .active .active2 .active2a .word p{
+       color: white;
+    }
+    .sbanner .sbanner1 .active .active2 .active2a .num{
+        height:7vh;
+        width:100%;
+       
+    }
+    .sbanner .sbanner1 .active .active2 .active2a .num i{
+        color: darkmagenta;
+    }
+    .sbanner .sbanner1 .active .active2 .active2a .num i span{
+        color: white;
+        margin-left: 130px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+    /* pending */
+    
+    .sbanner .sbanner1 .active .active2 .active2b{
+        height:15vh;
+        /* width:50%; */
+        background-color:orange;
+        padding: 10px;
+        
+    }
+    .sbanner .sbanner1 .active .active2 .active2b .word{
+        height:7vh;
+        width:100%;
+        padding: 5px;
+        text-align:right;
+    }
+    .sbanner .sbanner1 .active .active2 .active2b .word p{
+       color: white;
+    }
+    .sbanner .sbanner1 .active .active2 .active2b .num{
+        height:7vh;
+        width:100%;
+       
+    }
+    .sbanner .sbanner1 .active .active2 .active2b .num i{
+        color:orangered;
+    }
+    .sbanner .sbanner1 .active .active2 .active2b .num i span{
+        color: white;
+        margin-left: 130px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+    .sbanner .sbanner1 .active .active2 .active2d{
+    height:15vh;
+    /* width:50%; */
+    background-color:red;
+    padding: 10px;
+    
+}
+.sbanner .sbanner1 .active .active2 .active2d .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.sbanner .sbanner1 .active .active2 .active2d .word p{
+   color: white;
+}
+.sbanner .sbanner1 .active .active2 .active2d .num{
+    height:7vh;
+    width:100%;
+   
+}
+.sbanner .sbanner1 .active .active2 .active2d .num i{
+    color:darkred;
+}
+.sbanner .sbanner1 .active .active2 .active2d .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+.sbanner .sbanner1 .active .active2 .active2c{
+    height:15vh;
+    /* width:50%; */
+    background-color:green;
+    padding: 10px;
+    
+}
+.sbanner .banner1 .active .active2 .active2c .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.sbanner .sbanner1 .active .active2 .active2c .word p{
+   color: white;
+}
+.sbanner .sbanner1 .active .active2 .active2c .num{
+    height:7vh;
+    width:100%;
+   
+}
+.sbanner .sbanner1 .active .active2 .active2c .num i{
+    color: darkgreen;
+}
+.sbanner .sbanner1 .active .active2 .active2c .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+/* rental */
+
+.sbanner .sbanner1 .active .active2 .active2d{
+    height:15vh;
+    /* width:50%; */
+    background-color:red;
+    padding: 10px;
+    
+}
+.sbanner .sbanner1 .active .active2 .active2d .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.sbanner .sbanner1 .active .active2 .active2d .word p{
+   color: white;
+}
+.sbanner .sbanner1 .active .active2 .active2d .num{
+    height:7vh;
+    width:100%;
+   
+}
+.sbanner .sbanner1 .active .active2 .active2d .num i{
+    color:darkred;
+}
+.sbanner .sbanner1 .active .active2 .active2d .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+.sbanner .banner1 .active .active2 .active2c{
+    height:15vh;
+    /* width:50%; */
+    background-color:green;
+    padding: 10px;
+    
+}
+.sbanner .sbanner1 .active .active2 .active2c .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.sbanner .sbanner1 .active .active2 .active2c .word p{
+   color: white;
+}
+.sbanner .sbanner1 .active .active2 .active2c .num{
+    height:7vh;
+    width:100%;
+   
+}
+.sbanner .sbanner1 .active .active2 .active2c .num i{
+    color: darkgreen;
+}
+.sbanner .sbanner1 .active .active2 .active2c .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+/* rental */
+
+.sbanner .sbanner1 .active .active2 .active2d{
+    height:15vh;
+    /* width:50%; */
+    background-color:red;
+    padding: 10px;
+    
+}
+.sbanner .sbanner1 .active .active2 .active2d .word{
+    height:7vh;
+    width:100%;
+    padding: 5px;
+    text-align:right;
+}
+.sbanner .sbanner1 .active .active2 .active2d .word p{
+   color: white;
+}
+.sbanner .sbanner1 .active .active2 .active2d .num{
+    height:7vh;
+    width:100%;
+   
+}
+.sbanner .sbanner1 .active .active2 .active2d .num i{
+    color:darkred;
+}
+.sbanner .sbanner1 .active .active2 .active2d .num i span{
+    color: white;
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 23px;
+}
+.sbanner .sbanner1 .bar{
+    width: 100%;
+    height: 55vh;
+    margin: auto;
+    background-color: white;
+    margin-top:90px;
+    padding: 30px;
+    position: relative;
+    top: 10vh;
+}
+.sbanner .sbanner1 .bar .bar1{
+    width: 100%;
+    height: 7vh;
+    /* background-color:antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+  
+}
+.sbanner .sbanner1 .bar .bar1 .num1{
+    width: 30%;
+    height: 7vh;
+    /* background-color:chartreuse; */
+    padding: 10px;
+  
+}
+.sbanner .sbanner1 .bar .bar1 .num1 p{
+    font-weight: bold;
+}
+.sbanner .sbanner1 .bar .bar1 .num2{
+    width: 30%;
+    height: 7vh;
+    /* background-color:chartreuse; */
+    text-align: center;
+    padding: 10px;
+  
+}
+.sbanner .sbanner1 .bar .bar1 .num2 p{
+    font-weight: bold;
+}
+.sbanner .sbanner1 .bar .bar2{
+    width: 100%;
+    height: 43vh;
+    margin: auto;
+    background-image:url(./pictures/barchat.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sbanner .sbanner1 .hell{
+    height: 40vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 10px;
+    padding: 20px;
+    position: relative;
+    top: 10vh;
+}
+.sbanner .sbanner1 .hell h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+.sbanner .sbanner1 .hell i{
+  color: #EEB91A;
+}
+.sbanner .sbanner1 .hell p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+/* second */
+
+.sbanner .sbanner2 .details{
+    height: 10vh;
+    width: 100%;
+    background-color:white;
+    padding: 40px;
+    padding-top: 30px;
+
+}
+.sbanner .sbanner2 .details i span{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.sbanner .sbanner2 .available{
+    width: 100%;
+    height: 30vh;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .sbanner .sbanner2 .available .ava1{
+      width: 70%;
+      height: 30vh;
+      /* background-color:aqua; */
+      display: flex;
+      justify-content: space-between;
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1a{
+      width: 25%;
+      height: 30vh;
+      /* background-color:blue; */
+      padding: 15px;
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1a .ava11{
+      width: 100%;
+      height: 20vh;
+      background-image: url(./pictures/taximan.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+     
+      
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1b{
+      width:75%;
+      height: 30vh;
+      /* background-color:deeppink; */
+      padding: 15px;
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1b .empty1{
+      width:70% ;
+      height:7vh;
+      background-color: #EEB91A;
+      display: flex;
+      justify-content: space-between;
+   }
+   .sbanner .sbanner2 .available .ava1 .ava1b .empty1 .empty2{
+      width:50% ;
+      height:7vh;
+      background-color:white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      padding: 5px;
+   }
+   
+   .sbanner .sbanner2 .available .ava1 .ava1b .empty{
+      width:70% ;
+      height:4vh;
+      background-color:#F6F2f3;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      padding: 5px;
+   }
+    .sbanner .sbanner2 .available .ava1 .ava1b h3{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 25px;
+       font-weight: bold;
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1b .aa{
+      color: grey;
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1b i{
+      color: orange;
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1b p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      color: grey;
+    }
+    .sbanner .sbanner2 .available .ava1 .ava1b p span{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: bold;
+      color:black;
+    }
+  
+    .sbanner .sbanner2 .available .ava2{
+      width: 30%;
+      height: 30vh;
+      /* background-color:cornflowerblue; */
+  
+    }
+    .sbanner .sbanner2 .available .ava2 .ava2a{
+      width: 100%;
+      height: 20vh;
+      /* background-color:antiquewhite; */
+      text-align:right;
+      padding: 10px;
+  
+    }
+    .sbanner .sbanner2 .available .ava2 .ava2a i{
+      color:green;
+  
+    }
+    .sbanner .sbanner2 .available .ava2 .ava2a i span{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .sbanner .sbanner2 .available .ava2 .ava2b{
+      width: 100%;
+      height: 10vh;
+      /* background-color:brown; */
+      text-align:right;
+      padding: 10px;
+      padding-top: 35px;
+  
+    }
+    .sbanner .sbanner2 .available .ava2 .ava2b .aa{
+      color:red;
+    }
+    .sbanner .sbanner2 .available .ava2 .ava2b i {
+      color:grey;
+    }
+    .sbanner .sbanner2 .capacity{
+        width: 100%;
+        height: 70vh;
+        background-color:white;
+        margin-top: 20px;
+        /* display: flex;
+        justify-content: space-between; */
+        padding: 10px;
+      }
+      .sbanner .sbanner2 .capacity .capacity1{
+        width: 100%;
+        height: 60vh;
+        /* background-color:burlywood; */
+        padding: 20px;
+      }
+      .sbanner .sbanner2 .capacity .capacity1 p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+      }
+      .sbanner .sbanner2 .capacity .capacity1 p span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color:grey;
+        margin-left:100px;
+      }
+      .sbanner .sbanner2 .capacity .capacity2{
+        width: 100%;
+        height: 30vh;
+        /* background-color: cadetblue; */
+        padding: 20px;
+      }
+      .sbanner .sbanner2 .capacity .capacity1 p span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color:grey;
+        margin-left:100px;
+      }
+      .sbanner .sbanner2 .capacity .capacity1 p span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color:grey;
+        margin-left:100px;
+      }
+      .sbanner .sbanner2 .capacity .capacity1 p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color:black;
+      }
+      .sbanner .sbanner2 .capacity .capacity1 p span i{
+        color: orange;
+      }
+      .sbanner .sbanner2 .capacity .capacity1 p span .aa{
+        color: grey;
+      }
+      
+
+  .sbanner .sbanner2 .document{
+    width: 100%;
+    height: 10vh;
+    /* background-color: bisque; */
+    padding: 10px;
+    padding-top: 30px;
+  }
+  .sbanner .sbanner2 .document p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+  }
+  .sbanner .sbanner2 .license{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .sbanner .sbanner2 .license .license1{
+    width:50%;
+    height: 30vh;
+    /* background-color:bisque; */
+    padding: 15px;
+  }
+  .sbanner .sbanner2 .license .license1 .license1a{
+    width:50%;
+    height: 7vh;
+    /* background-color:violet; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+  }
+  .sbanner .sbanner2 .license .license1 .license1a .cen1{
+    width:20%;
+    height: 7vh;
+    background-color:#EEB91A;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    
+  }
+  .sbanner .sbanner2 .license .license1 .license1a .cen1 i{
+    color: white;
+  }
+  
+  .sbanner .sbanner2 .license .license1 .license1a .cen2{
+    width:80%;
+    height: 7vh;
+    background-color:#F6F2f3;
+    
+  }
+
+
+  .sbanner .sbanner2 .license .license2{
+    width: 50%;
+    height: 30vh;
+    /* background-color:cadetblue; */
+    padding: 15px;
+  }
+  .sbanner .sbanner2 .license .license1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+  }
+  .sbanner .sbanner2 .license .license1 p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+  }
+  .sbanner .sbanner2 .license h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+  }
+  .sbanner .sbanner3 .pass{
+    width:100%;
+    height:7vh;
+    /* background-color:blue; */
+    padding: 10px;
+    padding-left: 20px;
+    
+}
+.sbanner .sbanner3 .pass h3{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #EEB91A;
+    
+}
+.sbanner .sbanner3 .total{
+    width: 100%;
+    height: 13vh;
+    /* background-color:cadetblue; */
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:4px solid white;
+    border-top:4px solid white;
+   
+}
+.sbanner .sbanner3 .total .total1{
+    width:60%;
+    height: 10vh;
+    /* background-color:rgb(191, 208, 209); */
+    display: flex;
+    justify-content: space-between;
+   
+}
+.sbanner .sbanner3 .total .total1 .total1a{
+    width:30%;
+    height: 10vh;
+   /* background-color: blueviolet; */
+   padding-top: 20px;
+   
+}
+.sbanner .sbanner3 .total .total1 .total1a p{
+   font-family: Arial, Helvetica, sans-serif;
+   color: grey;
+   font-size: 25px;
+   
+}
+.sbanner .sbanner3 .total .total1 .total1a p span{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 25px;
+    
+ }
+.sbanner .sbanner3 .total .total2{
+    width: 40%;
+    height: 10vh;
+    /* background-color:bisque; */
+    display: flex;
+    justify-content: space-between;
+   
+}
+.sbanner .sbanner3 .total .total2 .total2a{
+    width: 50%;
+    height: 10vh;
+    /* background-color:bisque; */
+   
+}
+.sbanner .sbanner3 .total .total2 .total2b{
+    width: 50%;
+    height: 10vh;
+    /* background-color:aquamarine; */
+    text-align: right;
+    padding-top: 20px;
+   
+}
+.sbanner .sbanner3 .total .total2 .total2b i{
+   color:#EEB91A;
+   font-size: 45px;
+    
+}
+.sbanner .sbanner3 .total .total2 .total2b i:hover{
+    color:red;
+    font-size: 20px;
+     
+ }
+ .sbanner .sbanner3 .active{
+    width: 100%;
+    height: 10vh;
+    /* background-color: aqua; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.sbanner .sbanner3 .active .active1{
+    width: 15%;
+    height: 7vh;
+    /* background-color:chocolate; */
+    padding: 15px;
+}
+.sbanner .sbanner3 .active .active1 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.sbanner .sbanner3 .rental{
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 11px;
+    padding:30px;
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+.sbanner .sbanner3 .rental:hover{
+    background-color: #F6F2f3;
+}  
+.sbanner .sbanner3 .rental .rentalg i{
+   color:rgb(6, 183, 6);
+}
+.sbanner .sbanner3 .rental .rentalb p{
+    font-weight: bold;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+}
+
+
+
+@media screen and (max-width:768px){}
+
+
+@media screen and (max-width:480px){
+    .sbanner .sbanner1 .active .active2{
+        height:auto;
+        width: 100%;
+        background-color:white;
+        padding: 40px;
+        /* display: flex;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .sbanner .sbanner1{
+        width: 100%;
+        height:145vh;
+        background-color:#F6F2f3;
+        display:block;
+    }
+    .sbanner .sbanner2 .capacity .capacity1{
+        width: 100%;
+        height: 70vh;
+        /* background-color: cadetblue; */
+        padding: 20px;
+    
+      }
+      .sbanner .sbanner2 .capacity{
+        width: 100%;
+        height: 80vh;
+        background-color:white;
+        margin-top: 20px;
+        /* display: flex;
+        justify-content: space-between; */
+        padding: 10px;
+      }
+      .sbanner .sbanner2 .available .ava1 .ava1a .ava11{
+      display: none;
+       
+        
+      }
+      .sbanner .sbanner2 .license .license2{
+       display: none;
+      }
+      .sbanner .sbanner3 .total .total2 .total2b i{
+        color:#EEB91A;
+        font-size: 25px;
+         
+     }
+     .sbanner .sbanner3 .total .total1 .total1a p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        font-size:12px;
+        
+     }
+     .sbanner .sbanner3 .total .total1 .total1a p span{
+         font-family: Arial, Helvetica, sans-serif;
+         color:black;
+         font-size: 12px;
+         
+      }
+      .phonenav .phonenav2 .phonenav2a button{
+        padding:15px;
+        border: none;
+        border-radius: 10px;
+        background-color: #EEB91A;
+       
+     }
+     
+     .phonenav .phonenav2 .phonenav2a button i{
+        font-size:15px;
+        
+      }
+      .phonenav .phonenav2 .phonenav2b .phonenav2bi{
+        width: 27%;
+        height: 6vh;
+        background-color:#F6F2f3;
+        border-radius: 180%; 
+        text-align: center;
+        padding-top: 15px;
+       
+    }
+    .phonenav .phonenav2 .phonenav2b .phonenav2bi i{
+        font-size: 20px;
+        color:black;
+    }
+    .phonenav .phonenav1{
+        width: 100%;
+        height: 10vh;
+        padding: 20px;
+        padding: 10px;
+        background-image: url(./pictures/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+    .sbanner .sbanner1 .bar{
+        width: 100%;
+        height: 55vh;
+        margin: auto;
+        background-color: white;
+        margin-top:90px;
+        padding: 30px;
+        position: relative;
+        top: 50vh;
+    }
+    .sbanner .sbanner1{
+        width: 100%;
+        height:auto;
+        background-color:#F6F2f3;
+        display:block;
+    }
+    .sbanner .sbanner1 .hell{
+        top: 50vh;
+    }
+     
+
+}
+

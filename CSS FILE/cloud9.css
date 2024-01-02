@@ -1,0 +1,1605 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*  */
+/* #back__preloader {
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: -webkit- flex;
+    display: -ms- flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  
+  
+  #back__circle_loader {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 5px;
+    border-top-color:#EEB91A;
+    border-right-color:#EEB91A;
+    border-bottom-color: #d5eaff;
+    border-left-color: #d5eaff;
+    border-radius: 50%;
+    animation: spinLoader 2s linear infinite;
+  }
+  @keyframes spinLoader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #back_loader_logo img{
+    width: 100%;
+  }
+   */
+   #loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+  }
+  #loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  #loader-wrapper .loader-section.section-left {
+    left: 0;
+  }
+  #loader-wrapper .loader-section.section-right {
+    right: 0;
+  }
+  #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 99999;
+  }
+  #loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+  }
+  #loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 4.5s linear infinite;
+    animation: spin 4.5s linear infinite;
+  }
+  .loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+  }
+  .loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 4s ease-out;
+    transition: all 4s ease-out;
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  .loaded #loader-wrapper {
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+  .loaded #loader {
+    opacity: 0;
+  }
+/*  */
+.hello{
+    width: 100%;
+    height: auto;
+    background-color:red;
+}
+
+.hello .navbar{
+    width: 100%;
+    height: 13vh;
+   background-color: black;
+   position: fixed;
+   z-index:10;
+}
+
+.hello .navbar .nav1{
+    width: 20%;
+    height: 11vh;
+    background-image: url(./pictures/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hello .navbar .nav2{
+   height: 11vh;
+   width: 50%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   align-items: center;
+   padding: 15px;
+
+}
+.hello .navbar .nav2 .nav3{
+  height: 6vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+}
+.hello .navbar .nav2 .nav3 a:hover{
+    color: black;
+
+}
+/* navbar2 */
+.hello .navbar2{
+  width:100%;
+  height: 11vh;
+  display: none;
+  background-color: black;
+ 
+}
+.hello .navbar2 .nav1{
+    background-image: url(./pictures/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 9vh;
+    width: 50%;
+    margin: auto;
+}
+.hello .navbar3{
+    display: none;
+    height: 6vh;
+    width: 100%;
+    background-color: black;
+   
+}
+.hello .navbar3 .nav2{
+    height: 4vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.hello .navbar3 .nav2 .nav3 {
+  height: 4vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar3 .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar3 .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+}
+.hello .navbar3 .nav2 .nav3 a:hover{
+    color: black;
+
+}
+/* banner section */
+.hello .banner{
+    height: 90vh;
+    width: 100%;
+   background-color: black;
+   display: flex;
+   justify-content: space-between;
+   
+}
+.hello .banner .banner1{
+    height: 90vh;
+    width:50%;
+    background-color:#EEB91A; 
+    border-top-right-radius: 360px;
+    border-bottom-right-radius:360px;
+
+   
+}
+.hello .banner img{
+    height: 70vh;
+     margin-top: 100px;
+     padding-left: 30px;
+
+}
+.hello .banner .banner2{
+    height: 100vh;
+    width:50%; 
+    margin-top: 50px; 
+   
+}
+.hello .banner .banner2 h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+/* .banner .banner2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+  } */
+
+.hello .banner .banner2 .banner3{
+    width: 80%;
+    height: 15vh;
+    /* background-color: red; */
+} 
+.hello .banner .banner2 .banner4{
+    width: 60%;
+    height: 65vh;
+    /* background-color: red; */
+    margin: auto;
+    text-align: right;
+    /* animation:4s Writing; */
+} 
+.hello .banner .banner2 .banner4 h4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+.hello .banner .banner2 .banner4 h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.hello .banner .banner2 .banner4 h2 span{
+    color:#EEB91A; ;
+}
+.hello .Sbanner{
+    display: none;
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+}
+.hello .Sbanner .Sbanner1{
+    height: 30vh;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.hello .Sbanner .Sbanner1 h4{
+    color:#EEB91A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.hello .Sbanner .Sbanner1 h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.hello .Sbanner .Sbanner2{
+    height: 40vh;
+    width: 50vh;
+    /* background-color: #EEB91A; */
+    margin: auto;
+    border-radius: 100%;
+
+}
+.hello .Sbanner .Sbanner2 img{
+    position: relative;
+    right: 20px;
+    width: 100%;
+    top: 250px;
+}
+.second{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    
+}
+.second .second1{
+        width: 100%;
+        height: 30vh;
+        background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgb(0,0,0,0.5));
+        padding-top: 50px;
+
+    
+}
+.second .second1 .second2{
+    height: 10vh;
+    width:35%;
+    margin: auto;
+    /* background-color: white; */
+    padding-top: 20px;
+}
+.second .second1 .second2 button{
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgb(0,0,0,0.5));
+
+
+}
+.second .second1 .second2 button:hover{
+    padding: 8px;
+}
+.third{
+    width: 100%;
+    height:25vh;
+    background-color: black;
+    display: none;
+    
+}
+.third .third1{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgb(0,0,0,0.5));
+    padding-top: 50px;
+
+
+}
+.third .third1 .third2{
+    height: 10vh;
+    width:50%;
+    margin: auto;
+    /* background-color: white; */
+    padding-top: 20px;
+}
+.third .third1 .third2 button{
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgb(0,0,0,0.5));
+
+
+}
+.our{
+    width: 100%;
+    height: auto;
+    background-color:white;
+}
+.our .service{
+    width: 100%;
+    height: 85vh;
+}
+.our .service .servicea{
+    height: 17vh;
+    width: 100%;
+    background-color:white;
+    text-align: center;
+    padding-top: 30px;
+    animation:3s fadeInUp;
+}
+.our .service .servicea h3{
+    color:#EEB91A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.our .service .servicea h2{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.our .service .serviceb{
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 80px;
+    animation:5s fadeInUp;
+}
+.our .service .serviceb .serviceb1{
+    width: 75%;
+    height: 35vh;
+    background-color:rgb(235, 235, 178);
+    border-right: 3px solid;
+    border-color: #F6F2F3;
+}
+.our .service .serviceb .serviceb1:hover{
+    /* background: linear-gradient(45deg, rgba(0,0, 0, 0.5),rgb(0,0,0,0.5)); */
+    padding: 10px;
+}
+.our .service .serviceb .serviceb1 .serviceb2{
+    width: 100%;
+    height: 20vh;
+    background-image: url(./pictures/first.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.our .service .serviceb .serviceb1 .servicec2{
+    width: 100%;
+    height: 20vh;
+    background-image: url(./pictures/hotel.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.our .service .serviceb .serviceb1 .serviced2{
+    width: 100%;
+    height: 20vh;
+    background-image: url(./pictures/third.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.our .service .serviceb .serviceb1 .servicee2{
+    width: 100%;
+    height: 20vh;
+    background-image: url(./pictures/bag.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.our .service .serviceb .serviceb1 .serviceb3{
+    width: 100%;
+    height: 25vh;
+    background-color:white;
+    text-align: center;
+    padding: 10px;
+}
+.our .service .serviceb .serviceb1 .serviceb3 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.our .service .serviceb .serviceb1 .serviceb3 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* TARIFFS */
+.tariffs{
+    width: 100%;
+    height: auto;
+    background-color:whitesmoke;
+    animation:7s fadeInUp;
+}
+.tariffs .tariff{
+    width: 100%;
+    height: 85vh;
+
+}
+.tariffs .tariff .servicea{
+    height: 17vh;
+    width: 100%;
+    background-color:whitesmoke;
+    text-align: center;
+    padding-top: 30px;
+}
+.tariffs .tariff .servicea h3{
+    color:#EEB91A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tariffs .tariff .servicea h2{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tariffs .tariff .serviceb{
+    width: 90%;
+    margin: auto;
+    height: 65vh;
+    background-color:whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 80px;
+}
+.tariffs .tariff .serviceb .serviceb1{
+    width: 75%;
+    height:53vh;
+    background-color:white;
+    padding-top: 10px;
+
+}
+.tariffs .tariff .serviceb .serviceb1:hover{
+    border: 4px solid;
+    border-color: #EEB91A;
+}
+.tariffs .tariff .serviceb1 .serviceb2{
+    width: 100%;
+    height: 23vh;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* background-image: url(./pictures/carlog.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+.tariffs .tariff .serviceb .serviceb1 .serviceb2 img{
+    width: 90%;
+}
+.tariffs .tariff .serviceb .serviceb1 .servicec2{
+    width: 100%;
+    height: 23vh;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* background-image: url(./pictures/business.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+.tariffs .tariff .serviceb .serviceb1 .servicec2 img{
+    width: 90%;
+}
+.tariffs .tariff .serviceb .serviceb1 .serviced2{
+    width: 100%;
+    height: 23vh;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* background-image: url(./pictures/vip.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+.tariffs .tariff .serviceb .serviceb1 .serviced2 img{
+    width: 90%;
+}
+.tariffs .tariff .serviceb .serviceb1 .servicee2{
+    width: 100%;
+    height: 23vh;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* background-image: url(./pictures/van.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+.tariffs .tariff .serviceb .serviceb1 .servicee2 img{
+    width: 90%;
+}
+
+.tariffs .tariff .serviceb .serviceb1 .serviceb3{
+    width: 100%;
+    height: 26vh;
+    background-color:white;
+    text-align: center;
+    padding: 10px;
+}
+.tariffs .tariff .serviceb .serviceb1 .serviceb3 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.tariffs .tariff .serviceb .serviceb1 .serviceb3 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tariffs .tariff .serviceb .serviceb1 .serviceb3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tariffs .tariff .serviceb .serviceb1 .serviceb3 h4 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.what{
+    height:80vh;
+    width: 100%;
+    background-image: linear-gradient(360deg, rgb(0,0,0,0.5),rgb(0, 0, 0,0.5)),url(./pictures/white\ \(2\).jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    animation:10s bounceInUp;
+}
+.what .whatleft{
+    height: 80vh;
+    padding: 20px;
+    /* animation:8s bounceOutLeft; */
+}
+.what .whatright{
+    height: 60vh;
+    background-image: url(./pictures/topp.png);
+    animation: 3s linear 0s infinite normal none running move5;
+
+}
+.what .whatleft1{
+    width: 100%;
+    height: 27vh;
+    padding: 10px;
+
+}
+.what .whatleft1 h4{
+    color: #EEB91A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.what .whatleft1 h2{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.what .whatleft1 p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.what .whatleft2{
+    height: 32vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+
+}
+.what .whatleft2 .what2a{
+    height: 32vh;
+    padding: 15px;
+    
+}
+.what .whatleft2 .what2a i{
+    color:#EEB91A;
+    
+}
+.what .whatleft2 .what2a i span{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+}
+.what .whatleft2 .what2b{
+    height: 32vh;
+}
+.what .whatleft2 .what2a button{
+    padding:20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color:black;
+}
+.what .whatleft2 .what2a button:hover{
+    padding: 15px;
+    background-color: #EEB91A;
+    color: white;
+    font-weight: bold;
+}
+.what .whatleft2 .what2b i{
+    color:#EEB91A;
+    
+}
+.what .whatleft2 .what2b i span{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+}
+.top{
+    display: none;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(360deg, rgb(0,0,0,0.5),rgb(0, 0, 0,0.5)),url(./pictures/big.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top .top1{
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    padding: 15px;
+}
+.top .top1 h4{
+    color: #EEB91A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+} 
+.top .top1 h2{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight: bold;
+} 
+.top .top2{
+    width: 100%;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 90px;
+}
+.top .top2 .what2a{
+    height: 35vh;
+}
+.top .top2 .what2b{
+ height: 35vh;
+}
+.top .top2 .what2a i{
+    color:#EEB91A;
+    
+}
+.top .top2 .what2a i span{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 25px;   
+}
+
+.top .top2 .what2a button{
+    padding:20px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color:black;
+}
+.top .top2 .what2a button:hover{
+    padding: 25px;
+    background-color: #EEB91A;
+    color: white;
+    font-weight: bold;
+}
+.top .top2 .what2b i{
+    color:#EEB91A;
+    
+}
+.top .top2 .what2b i span{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 25px;   
+}
+/* clients */
+.client{
+    height: auto;
+    width: 100%;
+    background-color: #F6F2F3;
+}
+.client .client1{
+    height: 80vh;
+    width: 100%;
+
+}
+.client .client1 .client1a{
+    height: 20vh;
+    width: 100%;
+    background-color:#F6F2F3;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 10px solid;
+    border-color:#EEB91A;
+
+    
+
+}
+.client .client1 .client1a h4{
+    color: #EEB91A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.client .client1 .client1a h2{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.client .client1 .client1b{
+    height: 55vh;
+    width: 90%;
+    background-color:#F6F2F3;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 80px;
+    animation:10s shakeY;
+}
+.client .client1 .client1b .person1:hover{
+    box-shadow: 2px 9px 9px 5px #EEB91A;
+}
+.client .client1 .client1b .person1{
+    height: 45vh;
+    width: 70%;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+.client .client1 .client1b .person1 p{
+    font-weight: bold;
+}
+.client .client1 .client1b .person1 .pic1{
+    width: 20%;
+    height: 8vh;
+    border-radius: 360%;
+    background-image: url(./pictures/a3a159125287482aa50374c6770700d4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 23px;
+}
+.client .client1 .client1b .person1 .pic2{
+    width: 20%;
+    height: 8vh;
+    border-radius: 360%;
+    background-image: url(./pictures/500x500.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 23px;
+}
+.client .client1 .client1b .person1 .pic3{
+    width: 20%;
+    height: 8vh;
+    border-radius: 360%;
+    background-image: url(./pictures/Michael-Jackson.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 23px;
+}
+.client .client2{
+    height: 20vh;
+    width: 100%;
+    background-color: #EEB91A;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.client .client2 .andleft{
+    width: 50%;
+    height: 20vh;
+    padding: 35px;
+}
+.client .client2 .andleft h4{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.client .client2 .andleft h3{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.client .client2 .andright{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.client .client2 .andright .right1{
+    width: 20%;
+    height: 9vh;
+    background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(2\).jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.client .client2 .andright .right2{
+    width: 20%;
+    height: 9vh;
+    background-image: url(./pictures/card.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.client .client2 .andright .right3{
+    width: 20%;
+    height: 9vh;
+    background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(1\).jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* last */
+.client .last{
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+    
+}
+.last .last-1 h3{
+    color: orange;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.last .lone{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    
+}
+.last .lone .last-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+}
+.last .last-3 p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.last .last-3 span{
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.last .last-3 .sub i{
+    color:#EEB91A;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.last .move .move-1{
+    display: flex;
+    justify-content: center;
+}
+.last .move .move-1 u{
+   color: white;
+}
+.last .move .move-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.last .move .move-2 i{
+    color:grey;
+    font-size: 13px;
+}
+
+ .img-1{
+    left: 40px;
+    bottom: 233px;
+    /* opacity: 0.33; */
+    animation: 3s linear 0s infinite normal none running move4;
+    z-index: 10;
+  }
+ 
+
+@keyframes move5 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } 
+
+@keyframes move4 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1025px) {
+    .hello .navbar{
+        display:none;  
+    }
+   .hello .navbar2{
+        display:block;  
+    }
+   .hello .navbar3{
+        display: block;
+    }
+    .hello .banner{
+        display: none;
+    }
+    .hello .Sbanner{
+        display: block;
+    }
+    .second{
+        display: none;
+    }
+    .third{
+        display: block;
+    }
+    .our .service{
+        height: 100vh;
+    }
+    .our .service .serviceb{
+        width: 90%;
+        margin: auto;
+        height: 70vh;
+        background-color:white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding-left: 80px;
+    }
+    .tariffs .tariff .serviceb{
+        width: 90%;
+        margin: auto;
+        height: 65vh;
+        background-color:whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+        padding-left: 80px;
+    }
+    .our .service .serviceb .serviceb1{
+        width: 75%;
+        height: 30vh;
+        background-color:rgb(235, 235, 178);
+        border-right: 3px solid;
+        border-color: #F6F2F3;
+    }
+    .tariffs .tariff{
+        width: 100%;
+        height:130vh;
+    }
+    .tariffs .tariff .serviceb .serviceb1{
+        width: 75%;
+        height:45vh;
+        background-color:white;
+        padding-top: 10px;
+        margin-bottom: 15px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .serviceb3{
+        width: 100%;
+        height: 20vh;
+        background-color:white;
+        text-align: center;
+        padding: 10px;
+    }
+    .tariffs .tariff .serviceb1 .serviceb2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .servicec2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .serviced2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .servicee2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+    .what{
+        display: none;
+    }
+    .top{
+        display: block;
+    }
+    .client .client1 .client1b{
+        height:70vh;
+        width: 90%;
+        background-color:#F6F2F3;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 80px;
+    }
+    .client .client1 .client1b .person1{
+        height: 25vh;
+        width: 70%;
+        background-color:white;
+        text-align: center;
+        padding: 10px;
+    }
+    .client .client1 .client1b .person1 .pic1{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/a3a159125287482aa50374c6770700d4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 23px;
+    }
+    .client .client1 .client1b .person1 .pic2{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/500x500.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 23px;
+    }
+    .client .client1 .client1b .person1 .pic3{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/Michael-Jackson.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 23px;
+    }
+    .client .client2 .andright .right1{
+        width: 20%;
+        height: 5vh;
+        background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(2\).jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .client .client2 .andright .right2{
+        width: 20%;
+        height: 7vh;
+        background-image: url(./pictures/card.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .client .client2 .andright .right3{
+        width: 20%;
+        height: 5vh;
+        background-image: url(./pictures/WhatsApp\ Image\ 2023-09-04\ at\ 11.44.58\ AM\ \(1\).jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+
+}
+
+
+@media screen and (max-width:768px) {
+    .hello .navbar{
+        display:none;  
+}
+   .hello .navbar2{
+        display:block;  
+}
+   .hello  .navbar3{
+        display: block;
+     }
+     .hello .banner{
+        display: none;
+     }
+     .hello  .Sbanner{
+        display: block;
+     }
+     .client .client1 .client1b{
+        height:79vh;
+        width: 90%;
+        background-color:#F6F2F3;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 80px;
+    }
+    .client .client1 .client1b .person1{
+        height: 35vh;
+        width: 70%;
+        background-color:white;
+        text-align: center;
+        padding: 10px;
+    }
+    .client .client1 .client1b .person1 .pic1{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/a3a159125287482aa50374c6770700d4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top:60px;
+    }
+    .client .client1 .client1b .person1 .pic2{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/500x500.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 60px;
+    }
+    .client .client1 .client1b .person1 .pic3{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/Michael-Jackson.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    .hello  .navbar{
+        display:none;  
+}
+   .hello .navbar2{
+         display:block;  
+}
+    .hello .navbar3{
+        display: block;
+    }
+    .hello  .banner{
+        display: none;
+    }
+    .hello .Sbanner{
+        display: block;
+        height: 65vh;
+        width: 100%;
+        background-color: black;
+    }
+    .hello  .Sbanner .Sbanner1 h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .hello .Sbanner .Sbanner2{
+        height: 24vh;
+        width: 55%;
+        /* background-color: #EEB91A; */
+        margin: auto;
+        /* border-radius: 100%; */
+    
+    }
+    .hello .Sbanner .Sbanner2 img{
+        position: relative;
+        right: 20px;
+        width: 110%;
+        top: 140px;
+    }
+    .third .third1 .third2{
+        height: 10vh;
+        width:60%;
+        margin: auto;
+        /* background-color: white; */
+        padding-top: 20px;
+    }
+    .third .third1 .third2 button{
+        padding: 5px;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        background: linear-gradient(360deg, rgba(216, 209, 9, 0.5),rgb(0,0,0,0.5));
+    
+    
+    }
+    .our{
+        display: block;
+    }
+    .our .service{
+        width: 100%;
+        height: 180vh;
+    }
+        
+    .our .service .serviceb{
+        width: 90%;
+        margin: auto;
+        height:150vh;
+        background-color:white;
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        padding-left: 80px;
+    }
+    .our .service .serviceb .serviceb1{
+        width: 75%;
+        height: 30vh;
+        background-color:rgb(235, 235, 178);
+        border-right: 3px solid;
+        border-color: #F6F2F3;
+    }
+    .tariffs .tariff{
+        width: 100%;
+        height:220vh;
+    }
+    .tariffs .tariff .serviceb{
+        width: 90%;
+        margin: auto;
+        height: 65vh;
+        background-color:whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: center;
+        padding-left: 80px;
+    }
+    .tariffs .tariff .serviceb .serviceb1{
+        width: 75%;
+        height:45vh;
+        background-color:white;
+        padding-top: 10px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .serviceb3{
+        width: 100%;
+        height: 20vh;
+        background-color:white;
+        text-align: center;
+        padding: 10px;
+    }
+    .tariffs .tariff .serviceb1 .serviceb2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .servicec2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .serviced2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    
+    }
+    .tariffs .tariff .serviceb .serviceb1 .servicee2{
+        width: 100%;
+        height: 23vh;
+        margin: auto;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+    .top .top2 .what2a{
+        height: 35vh;
+    }
+    .top .top2 .what2b{
+     height: 35vh;
+    }
+    .top .top2 .what2a i{
+        color:#EEB91A;
+        
+    }
+    .top .top2 .what2a i span{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;    
+    }
+    .top .top2 .what2a a button{
+       padding:9px;  
+    }
+    .top .top2 .what2a button{
+        padding:10px;
+        border: none;
+        border-radius: 20px;
+        background-color: white;
+        color:black;
+    }
+    .top .top2 .what2a button:hover{
+        padding: 15px;
+        background-color: #EEB91A;
+        color: white;
+        font-weight: bold;
+    }
+    .top .top2 .what2b i{
+        color:#EEB91A;
+        
+    }
+    .top .top2 .what2b i span{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;    
+    }
+    .client .client1 .client1b{
+        height:150vh;
+        width:100%;
+        background-color:#F6F2F3;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 80px;
+    }
+    .client .client1 .client1b .person1{
+        height: 45vh;
+        width: 70%;
+        background-color:white;
+        text-align: center;
+        padding: 10px;
+    }
+    .client .client1 .client1b .person1 .pic1{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/a3a159125287482aa50374c6770700d4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 23px;
+    }
+    .client .client1 .client1b .person1 .pic2{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/500x500.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 23px;
+    }
+    .client .client1 .client1b .person1 .pic3{
+        width: 40%;
+        height: 8vh;
+        border-radius: 360%;
+        background-image: url(./pictures/Michael-Jackson.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 23px;
+    }
+    .client .last{
+        height: auto;
+    }
+    .client .last .lone{
+        grid-template-columns: 1fr;
+    }
+    
+   
+}

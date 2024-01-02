@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hello{
+    width:100%;
+    height: auto;
+    background-color:red;
+}
+
+.hello .navbar{
+    width:100%;
+    height: 13vh;
+   background-color: black;
+   position: fixed;
+   z-index:10;
+}
+
+.hello .navbar .nav1{
+    width: 20%;
+    height: 11vh;
+    background-image: url(./pictures/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hello .navbar .nav2{
+   height: 11vh;
+   width: 50%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   align-items: center;
+   padding: 15px;
+
+}
+.hello .navbar .nav2 .nav3{
+  height: 6vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+}
+.hello .navbar .nav2 .nav3 a:hover{
+    color: black;
+
+}
+/* navbar2 */
+.hello .navbar2{
+  width:100%;
+  height: 11vh;
+  display: none;
+  background-color: black;
+ 
+}
+.hello .navbar2 .nav1{
+    background-image: url(./pictures/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 9vh;
+    width: 50%;
+    margin: auto;
+}
+.hello .navbar3{
+    display: none;
+    height: 6vh;
+    width: 100%;
+    background-color: black;
+   
+}
+.hello .navbar3 .nav2{
+    height: 4vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.hello .navbar3 .nav2 .nav3 {
+  height: 4vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.hello .navbar3 .nav2 .nav3:hover{
+    color: black;
+    background-color:#EEB91A;
+
+}
+.hello .navbar3 .nav2 .nav3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+}
+.hello .navbar3 .nav2 .nav3 a:hover{
+    color: black;
+
+}
+
+.carousel .carousel-inner{
+    height:90vh;
+    width:100%; 
+}
+/* .shell{
+    height: 100vh !important;
+    position: absolute !important;
+    top: 13vh !important;
+    z-index: 10 !important;
+    width: 100% !important;
+    background-image: linear-gradient(100deg,rgba(1, 16, 8, 0.8),rgba(21, 22, 3, 0.8)) url("../CSS FILE/pictures/garage.jpeg") !important;
+} */
+/* .shell .carousel{
+    z-index: 5 !important;
+}
+.carousel .carousel-inner .carousel-item .w-100{
+    z-index: 5;
+  } */
+
+.carousel .carousel-inner .carousel-item .carousel-caption{
+  color: white !important;
+  position: absolute !important;
+  top:300px !important;
+}
+
+
+
+
+
+@media screen and (max-width:1025px) {
+    .hello .navbar{
+        display:none;  
+    }
+   .hello .navbar2{
+        display:block;  
+    }
+   .hello .navbar3{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .hello .navbar{
+        display:none;  
+    }
+   .hello .navbar2{
+        display:block;  
+    }
+   .hello  .navbar3{
+        display: block;
+     }
+}
+
+@media screen and (max-width:480px) {
+    .hello  .navbar{
+        display:none;  
+    }
+   .hello .navbar2{
+         display:block;  
+    }
+    .hello .navbar3{
+        display: block;
+    }
+}
